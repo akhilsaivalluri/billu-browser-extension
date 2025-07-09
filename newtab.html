@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billu's New Tab</title>
+    <link rel="stylesheet" href="newtab.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="billu-mascot">
+                <div class="mini-cat">
+                    <div class="mini-cat-head">
+                        <div class="mini-ears">
+                            <div class="mini-ear left"></div>
+                            <div class="mini-ear right"></div>
+                        </div>
+                        <div class="mini-eyes">
+                            <div class="mini-eye left"></div>
+                            <div class="mini-eye right"></div>
+                        </div>
+                    </div>
+                    <div class="mini-cat-body"></div>
+                </div>
+            </div>
+            <h1>Billu Knows Best</h1>
+            <p class="tagline">Your wise companion for mindful browsing</p>
+        </header>
+
+        <main class="main-content">
+            <div class="search-section">
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search the web or enter URL...">
+                    <button id="search-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="21 21l-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="search-engines">
+                    <button class="engine-btn active" data-engine="google">Google</button>
+                    <button class="engine-btn" data-engine="bing">Bing</button>
+                    <button class="engine-btn" data-engine="duckduckgo">DuckDuckGo</button>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card time-card">
+                    <div class="card-header">
+                        <h3>Today's Browsing</h3>
+                        <div class="card-icon">⏰</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="big-number" id="total-time">0h 0m</div>
+                        <div class="stat-detail">
+                            <span>Most visited: </span>
+                            <span id="top-site">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-card category-card">
+                    <div class="card-header">
+                        <h3>Time by Category</h3>
+                        <div class="card-icon">📈</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="category-list" id="category-breakdown">
+                            <div class="category-item">
+                                <span class="category-name">Work</span>
+                                <div class="category-bar">
+                                    <div class="category-fill work" style="width: 0%"></div>
+                                </div>
+                                <span class="category-time">0m</span>
+                            </div>
+                            <div class="category-item">
+                                <span class="category-name">Social</span>
+                                <div class="category-bar">
+                                    <div class="category-fill social" style="width: 0%"></div>
+                                </div>
+                                <span class="category-time">0m</span>
+                            </div>
+                            <div class="category-item">
+                                <span class="category-name">Entertainment</span>
+                                <div class="category-bar">
+                                    <div class="category-fill entertainment" style="width: 0%"></div>
+                                </div>
+                                <span class="category-time">0m</span>
+                            </div>
+                            <div class="category-item">
+                                <span class="category-name">Shopping</span>
+                                <div class="category-bar">
+                                    <div class="category-fill shopping" style="width: 0%"></div>
+                                </div>
+                                <span class="category-time">0m</span>
+                            </div>
+                            <div class="category-item">
+                                <span class="category-name">News</span>
+                                <div class="category-bar">
+                                    <div class="category-fill news" style="width: 0%"></div>
+                                </div>
+                                <span class="category-time">0m</span>
+                            </div>
+                            <div class="category-item">
+                                <span class="category-name">Other</span>
+                                <div class="category-bar">
+                                    <div class="category-fill other" style="width: 0%"></div>
+                                </div>
+                                <span class="category-time">0m</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-card billu-wisdom">
+                    <div class="card-header">
+                        <h3>Billu's Wisdom</h3>
+                        <div class="card-icon">🐱</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="wisdom-quote" id="daily-wisdom">
+                            "The internet is vast, but your time is not. Choose wisely!"
+                        </div>
+                        <div class="wisdom-author">- Billu the Wise Cat</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quick-links">
+                <h3>Quick Access</h3>
+                <div class="links-grid" id="quick-links-grid">
+                    <!-- Quick links will be populated by JavaScript -->
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <span>Billu Knows Best v1.0</span>
+                <span>•</span>
+                <span>Mindful browsing, one paw at a time</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="newtab.js"></script>
+</body>
+</html>

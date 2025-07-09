@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Billu Extension Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .test-section {
+            background: #f5f5f5;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .success {
+            color: #28a745;
+            font-weight: bold;
+        }
+        .error {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        .info {
+            color: #007bff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>🐱 Billu Knows Best - Extension Test</h1>
+    
+    <div class="test-section">
+        <h2>Test Instructions</h2>
+        <ol>
+            <li>Make sure the extension is loaded in Edge</li>
+            <li>Click the extension icon in your toolbar</li>
+            <li>Test the popup functionality</li>
+            <li>Configure Azure OpenAI settings (optional)</li>
+            <li>Browse different websites to see Billu in action</li>
+        </ol>
+    </div>
+
+    <div class="test-section">
+        <h2>Expected Behavior</h2>
+        <ul>
+            <li><span class="success">✅ Billu cat should appear on websites</span></li>
+            <li><span class="success">✅ Popup should show browsing stats</span></li>
+            <li><span class="success">✅ Settings panel should allow Azure OpenAI configuration</span></li>
+            <li><span class="success">✅ Extension should work without AI configuration</span></li>
+            <li><span class="success">✅ New tab page should show enhanced interface</span></li>
+        </ul>
+    </div>
+
+    <div class="test-section">
+        <h2>Test Categories</h2>
+        <p>Visit these sites to test different categories:</p>
+        <ul>
+            <li><strong>Work:</strong> GitHub, Stack Overflow, Gmail</li>
+            <li><strong>Social:</strong> Facebook, Twitter, Reddit</li>
+            <li><strong>Entertainment:</strong> YouTube, Netflix, Spotify</li>
+            <li><strong>Shopping:</strong> Amazon, eBay</li>
+            <li><strong>News:</strong> CNN, BBC, Reuters</li>
+        </ul>
+    </div>
+
+    <div class="test-section">
+        <h2>AI Configuration Test</h2>
+        <p>To test AI features:</p>
+        <ol>
+            <li>Click extension icon → Settings</li>
+            <li>Enter your Azure OpenAI credentials</li>
+            <li>Click "Test Connection"</li>
+            <li>Save configuration</li>
+            <li>Browse websites to see AI-powered messages</li>
+        </ol>
+    </div>
+
+    <div class="test-section">
+        <h2>Fallback Test</h2>
+        <p>Without Azure OpenAI configuration, Billu should still:</p>
+        <ul>
+            <li>Show motivational messages</li>
+            <li>Track browsing statistics</li>
+            <li>Provide all other features</li>
+        </ul>
+    </div>
+
+    <script>
+        // Test if content script is loaded
+        console.log('Test page loaded. Billu should appear in 3 seconds...');
+        
+        // Add some content to test with
+        setTimeout(() => {
+            console.log('Checking for Billu cat container...');
+            const billuContainer = document.getElementById('billu-cat-container');
+            if (billuContainer) {
+                console.log('✅ Billu cat container found!');
+            } else {
+                console.log('❌ Billu cat container not found. Make sure extension is loaded.');
+            }
+        }, 5000);
+    </script>
+</body>
+</html>
